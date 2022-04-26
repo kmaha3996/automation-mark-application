@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MARK Smoke Testing">
+	<listeners>
+		<listener
+			class-name="listeners.CustomListener"></listener>
+	</listeners>
+	<test name="Login using Teacher Admin">
+		<classes>
+			<class name="testcases.TC1_Login">
+				<methods>
+					<include name="loginVerifyTeacherAdmin()" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Login using Teacher">
+		<classes>
+			<class name="testcases.TC1_Login">
+				<methods>
+					<include name="loginVerifyTeacher()" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="MarksheetPage: Marks Update">
+		<classes>
+			<class name="testcases.TC3_MarksheetPage">
+				<methods>
+					<include name="markSheetUploadVerify()" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="MarksheetPage: SchoolGapsExport">
+		<classes>
+			<class name="testcases.TC3_MarksheetPage">
+				<methods>
+					<include name="schoolGapsExportVerify()" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="ReportPage: Individual Report">
+		<classes>
+			<class name="testcases.TC5_ReportsPage">
+				<methods>
+					<include name="individualReportVerify()" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="ReportPage: Group Report">
+		<classes>
+			<class name="testcases.TC5_ReportsPage">
+				<methods>
+					<include name="groupReportVerify()" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="TestResource Download">
+		<classes>
+			<class name="testcases.TC6_TestResources">
+				<methods>
+					<include name="testResourceNewWindowVerify()" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="InteractivesPage: Assign Tests">
+		<classes>
+			<class name="testcases.TC4_InteractivesPage">
+				<methods>
+					<include name="assignTestVerify()" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="InteractivesPage: Appear for Test">
+		<classes>
+			<class name="testcases.TC4_InteractivesPage">
+				<methods>
+					<include name="appearInteractiveTestNewVerify()" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<!-- Test -->
+</suite> <!-- Suite -->

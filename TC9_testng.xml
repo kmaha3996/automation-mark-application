@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="LoginPage3">
+		<classes>
+			<class name="testcases.TC1_LoginPage">
+				<methods>
+					<include name="loginVerifyMarkNonSubTeacher()" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
